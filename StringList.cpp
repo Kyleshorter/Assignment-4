@@ -4,7 +4,7 @@ using namespace std;
 
 StringList::StringList()
 {
-    StringNode *head = NULL;
+    head = NULL;
 }
 StringList::~StringList()
 {
@@ -14,10 +14,10 @@ StringList::~StringList()
 }
 int StringList::count()
 {
-   int count =0;
    StringNode *current;
-   current = head;
-   while(current !=NULL)
+   int count = 0;
+   current=head;
+   while(current != NULL)
     {
         count++;
         current = current->next;
@@ -29,7 +29,8 @@ void StringList::add(string movie)
 {
     StringNode *newNode = new StringNode;
     newNode ->data = movie;
-    newNode ->next= NULL;
+    newNode ->next= head;
+    head = newNode;
 }
 
 void StringList::display()
@@ -38,7 +39,25 @@ void StringList::display()
     display=head;
     while (display!=NULL)
     {
-        cout << display ->data << " ";
+        cout << display ->data << " " << endl;
         display=display->next;
     }
+}
+
+bool StringList::remove(string movie)
+{
+    StringNode *p;
+    StringNode *remove;
+    remove = head;
+
+    while(remove!=NULL)
+    {
+        if(remove -> data==movie)
+        {
+            delete remove;
+            return true;
+        }
+        p->next= remove->next;
+    }
+    return false;
 }
