@@ -22,7 +22,7 @@ int StringList::count()
         count++;
         current = current->next;
     }
-    cout << count << endl;
+    return count;
 }
 
 void StringList::add(string movie)
