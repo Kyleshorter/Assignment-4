@@ -16,6 +16,7 @@ int StringList::count()
 {
    int count =0;
    StringNode *current;
+   head = head -> next;
    while(current !=NULL)
     {
         count++;
