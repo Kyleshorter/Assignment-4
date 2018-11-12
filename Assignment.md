@@ -2,10 +2,7 @@
 Dumb project that makes me wanna cry
 _____________________________________
 Programming Assignment #4
-Linked List of string
-CS 2308
-Instructor: Yijuan Lu
-Due: Tuesday, 11/13/2018: upload electronic copy by 9:00 am.
+Linked List of strings
 
 Problem: Implement an interface that manipulates a list of strings. You will be
 provided with the following files on the Tracs:
