@@ -22,21 +22,21 @@ int main()
     slist.display();
     cout << "count is: " << slist.count() << endl;
 
-//    slist.add(movie2);
-//    slist.display();
-//    cout << "count is: " << slist.count() << endl;
+    slist.add(movie2);
+    slist.display();
+    cout << "count is: " << slist.count() << endl;
 //
-//    slist.add(movie3);
-//    slist.add(movie4);
-//    slist.display();
-//    cout << "count is: " << slist.count() << endl;
-//
-//    // Testing remove
-//    cout << endl;
-//    cout << "Testing remove: " << endl;
-//    bool delResult;
-//    delResult = slist.remove(movie4);
-//    cout << "remove result movie4 = " << boolalpha << delResult << endl;
+    slist.add(movie3);
+    slist.add(movie4);
+    slist.display();
+    cout << "count is: " << slist.count() << endl;
+
+    // Testing remove
+    cout << endl;
+    cout << "Testing remove: " << endl;
+    bool delResult;
+    delResult = slist.remove(movie4);
+    cout << "remove result movie4 = " << boolalpha << delResult << endl;
 //
 //    delResult = slist.remove(movie3);
 //    cout << "remove result movie3 = " << boolalpha << delResult << endl;
