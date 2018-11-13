@@ -61,3 +61,19 @@ bool StringList::remove(string movie)
     head = remove;
     return false;
 }
+string StringList::minimum()
+{
+    StringNode *lowest;
+    lowest=head;
+    cout << "here" << endl;
+    while(lowest != NULL)
+    {
+        if(lowest < lowest ->next)
+        {
+            lowest=lowest->next;
+        }
+        lowest=lowest->next;
+    }
+
+    return lowest->data;
+}
