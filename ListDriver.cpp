@@ -38,11 +38,11 @@ int main()
     delResult = slist.remove(movie4);
     cout << "remove result movie4 = " << boolalpha << delResult << endl;
 //
-//    delResult = slist.remove(movie3);
-//    cout << "remove result movie3 = " << boolalpha << delResult << endl;
+    delResult = slist.remove(movie3);
+    cout << "remove result movie3 = " << boolalpha << delResult << endl;
 //
-//    delResult = slist.remove("Not There");
-//    cout << "remove result Not There = " << boolalpha << delResult << endl;
+    delResult = slist.remove("Not There");
+    cout << "remove result Not There = " << boolalpha << delResult << endl;
 //
 //    cout << "display after remove: " << endl;
 //    slist.display();
