@@ -46,18 +46,17 @@ void StringList::display()
 
 bool StringList::remove(string movie)
 {
-    StringNode *p;
     StringNode *remove;
     remove = head;
-
-    while(remove!=NULL)
+    head = head ->next;
+    while(remove!=NULL && remove -> data ==movie)
     {
         if(remove -> data==movie)
         {
             delete remove;
             return true;
         }
-        p->next= remove->next;
+        head = head ->next;
     }
     return false;
 }
