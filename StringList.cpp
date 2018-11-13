@@ -65,15 +65,13 @@ string StringList::minimum()
 {
     StringNode *lowest;
     lowest=head;
-    cout << "here" << endl;
-    while(lowest != NULL)
+    while(head != NULL)
     {
         if(lowest < lowest ->next)
         {
             lowest=lowest->next;
         }
-        lowest=lowest->next;
+        head=head->next;
     }
-
     return lowest->data;
 }
