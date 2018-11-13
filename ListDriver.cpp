@@ -44,9 +44,9 @@ int main()
     delResult = slist.remove("Not There");
     cout << "remove result Not There = " << boolalpha << delResult << endl;
 //
-//    cout << "display after remove: " << endl;
-//    slist.display();
-//    cout << "count is: " << slist.count() << endl;
+    cout << "display after remove: " << endl;
+    slist.display();
+    cout << "count is: " << slist.count() << endl;
 //
 //    // Testing minimum
 //    cout << endl;
