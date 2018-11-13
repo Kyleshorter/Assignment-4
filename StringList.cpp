@@ -58,5 +58,6 @@ bool StringList::remove(string movie)
         }
         head = head ->next;
     }
+    head = remove;
     return false;
 }
